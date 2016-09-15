@@ -1,0 +1,29 @@
+<div class="row" ng-init="persentBlog.callBlogsData()">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br/>
+                <h1>Edit this blog post</h1>
+                <div class="post-preview">
+                   <form ng-submit="persentBlog.editPost(persentBlog.blogId)">
+                       <input placeholder="Heading of Blog" type="text" name="heading" ng-model="persentBlog.call.heading" required="" /><br/><br/>
+                       <input placeholder="Sub Heading of Blog" type="text" name="subHeading" ng-model="persentBlog.call.subHeading" required=""><br/><br/>
+                       <input placeholder="Author" type="text" name="author" ng-model="persentBlog.call.author" required="" /><br/><br/>
+                      
+                       <textarea rows="4" cols="50" ng-model="persentBlog.call.bodyHtml" required="" >
+                            
+                       </textarea>
+                       <br/><br/>
+                       <input type="submit" value="Edit Blog" />
+                   </form>
+                </div>
+                <hr>
+                
+              
+             
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#/">Back to Home &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+</div>
